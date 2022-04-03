@@ -230,7 +230,26 @@ if (i == 0 ){
 
 }
 
+// to get berder of answer effict ehen you click it
 
+function divAple(P) {
+
+    document.getElementById("button-next").disabled = false;
+
+    if (P == 1){
+        document.getElementById("rad1").checked = true;
+    }
+    if (P == 2){
+        document.getElementById("rad2").checked = true;
+    }
+    if (P == 3){
+        document.getElementById("rad3").checked = true;
+    }
+    if (P == 4){
+        document.getElementById("rad4").checked = true;
+    }
+
+}
 
 function butAple(){
     document.getElementById("button-next").disabled=false;
@@ -326,8 +345,12 @@ function orph() {
     document.getElementById("ans4").innerHTML = myQ[i].answers["d"];
 
 
-   // srote the pass answer to session storage
+    // trans the pass answer to session storage
+    // trans the falseQ and falseAnswe answer to session storage
+
     sessionStorage.setItem("passQ",pass.length)
+    sessionStorage.setItem("falseQ",f)
+    sessionStorage.setItem("falseAns",syff)
 
     // reset orders
 
@@ -354,4 +377,20 @@ function orph() {
     }
 
 
+}
+const startingMinutes=30;
+let time=startingMinutes * 60;
+
+const countdownEl=document.getElementById("countdown");
+
+setInterval(updatecountdown,1000);
+
+function updatecountdown()
+{
+    const minutes=Math.floor(time/60);
+    let seconds=time % 60;
+    seconds=seconds<10 ?  '0' +seconds:seconds;
+    countdownEl.innerHTML=`${minutes} : ${seconds}`;
+    time--;
+    
 }
