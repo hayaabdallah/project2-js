@@ -75,7 +75,8 @@
     color:white;
     background-color: black;
     margin-right: 60px;
-    
+    position: relative;
+    top:20px;
 }
 
 .result_box .buttons #finish:hover{
@@ -94,6 +95,8 @@
     cursor: pointer;
     color:white;
     background-color: black;
+    position: relative;
+    top:20px;
 }
 .result_box .buttons #show_result:hover{
     transform: scale(1.1);
@@ -121,23 +124,23 @@
 @media screen and (max-width: 600px) {
     .result_box {
        width: 200px;
-       height: 500px;
+       height: 380px;
        
     }
-    .result_box .buttons .finish
+    .result_box .buttons #finish
     {
         width:90px;
         position: relative;
-        bottom: 40px;
+      top:20px;
         left:20px;
         font-size: 15px;
       
     }
-    .result_box .buttons .show_result
+    .result_box .buttons #show_result
     {
         width:130px;
         position: relative;
-        bottom: 40px;
+        top:20px;
         right: 25px;
         font-size: 15px;
     }
@@ -151,6 +154,8 @@
     #image
     {
         width:250px;
+        position: relative;
+        top:20px;
     }
     #image2
     {
