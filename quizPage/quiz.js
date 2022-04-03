@@ -304,7 +304,7 @@ function orph() {
 
     // end of quiz it will trans you for result page
     if(i == myQ.length){
-        window.location.href="/project2-js/resultPage/res.html";
+        window.location.href="file:///C:/Users/User/project2-js/resultPage/res.html";
     }
 
     // trans next btn to finish btn

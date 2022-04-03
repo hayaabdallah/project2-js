@@ -37,7 +37,7 @@ function reg() {
                             passCh.style.display = "none"
                                 if (pass.value === passCon.value) {
                                       chPass.style.display = "none"
-                                      window.location.href = "/project2-js/loginPage/login.html"
+                                      window.location.href = "file:///C:/Users/User/project2-js/loginPage/login.html"
                                 } else {
                                 chpass.style.display = "inline"
                             }

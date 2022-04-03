@@ -8,7 +8,7 @@ function sign() {
         emch.style.display = "none";
             if (signPass.value === localStorage.getItem("password")) {
                 pach.style.display = "none";
-                window.location.href = "/project2-js/welcomingPage/welcome.html";
+                window.location.href = "file:///C:/Users/User/project2-js/welcomingPage/welcome.html";
             } else {
                 pach.style.display = "inline";
             } 
