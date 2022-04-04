@@ -304,24 +304,28 @@ for (i = 0; i < myQ.length; i++) {
 
 
     //check user uncorrect answer from session storage and set background red
-    for (j = 0; j < sessionStorage.getItem('falseQ').length; j++) {
-        if (sessionStorage.getItem('falseQ')[j] == i) {
-            if (sessionStorage.getItem('falseAns')[j] == 'a') {
+    f=JSON.parse(sessionStorage.getItem('falseQ'));
+    fa=JSON.parse(sessionStorage.getItem('falseAns'));
+    for (j = 0; j < f.length; j++) {
+        if (f[j] == i) {
+            if (fa[j] == 'a') {
                 document.getElementById(`${input1Id}`).style.backgroundColor = 'red';
+                break;
             }
-            else if (sessionStorage.getItem('falseAns')[j] == 'b') {
+            else if (fa[j] == 'b') {
                 document.getElementById(`${input2Id}`).style.backgroundColor = 'red';
+                break;
             }
-            else if (sessionStorage.getItem('falseAns')[j] == 'c') {
+            else if (fa[j] == 'c') {
                 document.getElementById(`${input3Id}`).style.backgroundColor = 'red';
+                break;
             }
-            else if (sessionStorage.getItem('falseAns')[j] == 'd') {
+            else if (fa[j] == 'd') {
                 document.getElementById(`${input4Id}`).style.backgroundColor = 'red';
+                break;
             }
         }
     }
-
-
 
 
 }

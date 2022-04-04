@@ -10,6 +10,12 @@
     min-height: 100%;
 }
 
+#countdown
+{
+    color: white;
+    
+}
+
 .cont {
     position: fixed;
     width: 100%;
@@ -109,6 +115,8 @@ body{
      display: flex;
      justify-content: center;
      align-items: center;
+     flex-wrap: wrap;
+     flex-direction: column;
  
  }
  
@@ -152,18 +160,11 @@ body{
      text-align: center;
  }
 
-#countdown
-{
-    color: white;
-    position: relative;
-    
-}
-
 
  /*------------------------------------------------------media query (quiz page)-----------------------------------------*/
 
 
- @media screen and (max-width: 600px) {
+ @media screen and (max-width: 479px) {
      
  .input-answer
  {
@@ -199,9 +200,10 @@ body{
  width:40%; 
  height: 60%;  
  position: relative;
- bottom: 10px;
- right: 7px;
- margin-bottom: 10%;
+ top:30px;
+ right: 3px;
+ margin-bottom: 27%;
+ right:30px;
     
  }
  #q
@@ -228,9 +230,12 @@ body{
 
 #countdown
 {
-  position: relative;
-  bottom:30px;
-  right: 60px;
+position: relative;
+bottom: 320px;
+left:130px;
 }
 
- }
+}
+
+
+

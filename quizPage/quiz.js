@@ -317,6 +317,13 @@ function orph() {
    // wo ge here to the next quastion on myQ array
     i += 1 ;
 
+    // trans the pass answer to session storage
+    // trans the falseQ and falseAnswe answer to session storage
+
+    sessionStorage.setItem("passQ",pass.length)
+    sessionStorage.setItem("falseQ",JSON.stringify(f))
+    sessionStorage.setItem("falseAns",JSON.stringify(syff))
+
 
     // the last condetions 
 
@@ -344,14 +351,6 @@ function orph() {
 
     document.getElementById("ans4").innerHTML = myQ[i].answers["d"];
 
-
-    // trans the pass answer to session storage
-    // trans the falseQ and falseAnswe answer to session storage
-
-    sessionStorage.setItem("passQ",pass.length)
-    sessionStorage.setItem("falseQ",f)
-    sessionStorage.setItem("falseAns",syff)
-
     // reset orders
 
     document.getElementById("rad1").checked = false;
@@ -378,18 +377,24 @@ function orph() {
 
 
 }
+
 const startingMinutes=30;
+
+//hours to minutes
 let time=startingMinutes * 60;
 
 const countdownEl=document.getElementById("countdown");
 
+//call function every second
 setInterval(updatecountdown,1000);
 
 function updatecountdown()
-{
+{   //to get the number of full minutes
     const minutes=Math.floor(time/60);
+    //to get the number of full seconds
     let seconds=time % 60;
-    seconds=seconds<10 ?  '0' +seconds:seconds;
+    seconds=seconds<30 ?  '0' +seconds:seconds;
+    //enter value of minutes and seconds to <p> tag
     countdownEl.innerHTML=`${minutes} : ${seconds}`;
     time--;
     

@@ -24,14 +24,6 @@ h1{
     background-color: rgb(155 196 209)
 }
 
-.input-answer:hover {
-    transform: scale(1.1);
-    transition: 0.5s;
-    background-color: #256f67;
-    color: white;
-    font-weight: bold;
-    border: 2px solid black
-}
 
 .div-form {
     width: 100%;
@@ -83,7 +75,7 @@ h1{
 @media screen and (max-width: 479px) {
     .container {
         width: 90%;
-        padding-left: 60px;
+        margin-left: 60px;
        
     }
     .div-input-p {
