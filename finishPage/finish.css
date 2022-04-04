@@ -11,8 +11,8 @@
     min-height: 100%;
   }
 /*image edit */
-  #vd {
-      width: 20%;
+  #im {
+      width: 60%;
       height: 90%;
       
   }
@@ -34,7 +34,9 @@ p {
 
 /* card edit*/
 .cardEdit {
-    
+    position: fixed;
+    top: 15%;
+    left: 30%;
     margin: 45px;
     margin-top: 2%;
 
@@ -44,7 +46,7 @@ p {
 /* breif edit*/
 .breif {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
@@ -66,16 +68,44 @@ p {
 }
 
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 479px) {
     #im {
-        width: 75%;
+        width: 65%;
+        margin-top: 30%;
     }
     .breif {
         width: 100%;
-        text-align: center;       
+        text-align: center;  
+            
      
     }
-   
-
+    .cardEdit {
+        position: fixed;
+        top: 0%;
+        left: 0%;
+        margin: 45px;
+        margin-top: 2%;
     
+    }
+}
+
+@media screen and (min-width: 480px) and (max-width: 768px) {
+    #im {
+        width: 35%;
+        margin-top: 10%;
+    }
+    .breif {
+        width: 100%;
+        text-align: center;  
+            
+     
+    }
+    .cardEdit {
+        position: fixed;
+        top: 5%;
+        left: 10%;
+        margin: 45px;
+        margin-top: 2%;
+    
+    }
 }

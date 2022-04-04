@@ -12,8 +12,9 @@ let chPass = document.getElementById("checkCon");
 let sub = document.getElementById("btn");
 
 
-let nameReg = /[a-zA-Z]/;
-let passReg = /^[A-Za-z]\w{7,14}$/;
+let nameReg = /^[a-zA-Z]/;
+let passReg = /^(?=.*[0-9])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{7,15}$/;
+
 
 for (i = 0; i < input.length; i++) {
     input[i].onchange = function() {

@@ -3,6 +3,10 @@ syff = []
 pass = []
 test=[]
 let i = 0
+let n = 0;
+let c = 0;
+let r = 0;
+
 var myQ = [
     {
         question: "What is the plural of appendix?",
@@ -216,19 +220,17 @@ document.getElementById("button-next").disabled=true;
 
 
 
-if (i == 0 ){
-    document.getElementById("q").innerHTML = `Q${0+1}: `+myQ[0].question;
-    // console.log(myQ[i].question)
+if (i == 0 && r == 0) {
+    r = r + 1;
 
-    document.getElementById("ans1").innerHTML = myQ[0].answers["a"];
-
-    document.getElementById("ans2").innerHTML = myQ[0].answers["b"];
-
-    document.getElementById("ans3").innerHTML = myQ[0].answers["c"];
-
-    document.getElementById("ans4").innerHTML = myQ[0].answers["d"];
-
+    document.getElementById("button-next").disabled = false;
+    document.getElementById("div1").style.display = "none";
+    document.getElementById("div2").style.display = "none";
+    document.getElementById("div3").style.display = "none";
+    document.getElementById("div4").style.display = "none";
+    document.getElementById("q").innerHTML = "now we are going to IQ section"
 }
+
 
 // to get berder of answer effict ehen you click it
 
@@ -261,8 +263,70 @@ function butAple(){
 
 function orph() {
     
-    // connect the quastion  and answers
 
+    // intro to IQ section
+    if (i == 0 && r == 1) {
+        r += 1
+        document.getElementById("div1").style.display = "block"
+        document.getElementById("div2").style.display = "block"
+        document.getElementById("div3").style.display = "block"
+        document.getElementById("div4").style.display = "block"
+
+        document.getElementById("q").innerHTML = `Q${0 + 1}: ` + myQ[0].question;
+
+        document.getElementById("ans1").innerHTML = myQ[0].answers["a"];
+
+        document.getElementById("ans2").innerHTML = myQ[0].answers["b"];
+
+        document.getElementById("ans3").innerHTML = myQ[0].answers["c"];
+
+        document.getElementById("ans4").innerHTML = myQ[0].answers["d"];
+        return
+    }
+
+    // intro to english section
+
+    if (i == 4 && n == 0) {
+        n += 1;
+        document.getElementById("button-next").disabled = false;
+        document.getElementById("div1").style.display = "none";
+        document.getElementById("div2").style.display = "none";
+        document.getElementById("div3").style.display = "none";
+        document.getElementById("div4").style.display = "none";
+
+        return document.getElementById("q").innerHTML = "now we are going to english section";
+
+
+    }
+    if (i == 4 && n > 0) {
+        document.getElementById("div1").style.display = "block"
+        document.getElementById("div2").style.display = "block"
+        document.getElementById("div3").style.display = "block"
+        document.getElementById("div4").style.display = "block"
+    }
+
+
+    // intro to technical section
+
+    if (i == 9 && c == 0) {
+        c += 1;
+        document.getElementById("button-next").disabled = false;
+        document.getElementById("div1").style.display = "none";
+        document.getElementById("div2").style.display = "none";
+        document.getElementById("div3").style.display = "none";
+        document.getElementById("div4").style.display = "none";
+
+        return document.getElementById("q").innerHTML = "now we are going to technical section";
+    }
+    if (i == 9 && c > 0) {
+        document.getElementById("div1").style.display = "block"
+        document.getElementById("div2").style.display = "block"
+        document.getElementById("div3").style.display = "block"
+        document.getElementById("div4").style.display = "block"
+    }
+
+    
+    // connect the quastion  and answers
 
     if (myQ[i].correctAnswer == "a") {
         document.getElementById("ans1").value = "1";
@@ -276,7 +340,6 @@ function orph() {
     if (myQ[i].correctAnswer == "d") {
         document.getElementById("ans4").value = "1";
     }
-
 
 
     // data for sucsses answer
@@ -364,16 +427,6 @@ function orph() {
     document.getElementById("ans2").value = "0";
     document.getElementById("ans3").value = "0";
     document.getElementById("ans4").value = "0";
-
-
-    // englesh siction
-    if ( i == 5){
-        alert("now we are going to english language section")
-    }
-    // technical section
-    if ( i == 10){
-        alert("now we are going to technical section")
-    }
 
 
 }

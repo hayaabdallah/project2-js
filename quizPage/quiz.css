@@ -124,7 +124,6 @@ body{
      border: 2px solid;
      padding: 70px;
      border-radius: 25px;
-      opacity: 0.7;
      background-color: gray; 
      
  } 
@@ -161,81 +160,74 @@ body{
  }
 
 
- /*------------------------------------------------------media query (quiz page)-----------------------------------------*/
+  /*------------------------------------------------------media query (quiz page)-----------------------------------------*/
 
 
- @media screen and (max-width: 479px) {
+  @media screen and (max-width: 480px) {
      
- .input-answer
- {
-   width: 200px;
-   position: relative;
-   right: 15px;
- }
-
- .input-answer2
- {
-   width: 200px;
-   position: relative;
-   right: 15px;
- }
-
- .input-answer3
- {
-   width: 200px;
-   position: relative;
-   right: 15px;
- }
-
- .input-answer4
- {
-   width: 200px;
-   position: relative;
-   right: 15px;
- }
- 
-#form
- {
-
- width:40%; 
- height: 60%;  
- position: relative;
- top:30px;
- right: 3px;
- margin-bottom: 27%;
- right:30px;
+    .input-answer
+    {
+      width: 200px;
+      position: relative;
+      right: 15px;
+    }
+   
+    .input-answer2
+    {
+      width: 200px;
+      position: relative;
+      right: 15px;
+    }
+   
+    .input-answer3
+    {
+      width: 200px;
+      position: relative;
+      right: 15px;
+    }
+   
+    .input-answer4
+    {
+      width: 200px;
+      position: relative;
+      right: 15px;
+    }
     
- }
- #q
- {
-   font-size: 16px;
-   position: relative;
-   bottom: 20px;
-   right:13px;
-
- }
-
-#button-next
-{
-
+   #form
+    {
+   
+    width:40%; 
+    height: 60%;  
     position: relative;
-    right: 20px;
-    font-size: 17px;
-    height: 35px;
-}
-
-.div-input-p {
-    padding: 20px;
-}
-
-#countdown
-{
-position: relative;
-bottom: 320px;
-left:130px;
-}
-
-}
-
-
-
+    margin-bottom: 27%;
+       
+    }
+    #q
+    {
+      font-size: 16px;
+      position: relative;
+      bottom: 20px;
+      right:13px;
+   
+    }
+   
+   #button-next
+   {
+   
+       position: relative;
+       right: 20px;
+       font-size: 17px;
+       height: 35px;
+   }
+   
+   .div-input-p {
+       padding: 20px;
+   }
+   
+   #countdown
+   {
+   position: relative;
+   
+   }
+   
+   }

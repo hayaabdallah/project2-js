@@ -2,6 +2,8 @@
     font-family: 'Work Sans', sans-serif;
         font-weight: 800;
 }
+
+/*video edit */
 #background {
     position: fixed;
     right: 0;
@@ -16,11 +18,16 @@
       
   }
 
+
+/*btn edit */
 #btn {
     border: solid 1px;
     border-radius: 50px;
     width: 35%;
     transition: 1s;
+    padding: 10px;
+    position: relative;
+    bottom: 15px;
     
 }
 #btn:hover {
@@ -35,13 +42,13 @@ p {
     padding: 1% 2%;
 }
 
-
+/* cont edit*/
 .content {
     position: fixed;
     margin-top: 3%;
 }
 
-
+/* card edit*/ 
 .cardEdit {
     
     margin: 45px;
@@ -49,6 +56,8 @@ p {
 
 }
 
+
+/* breif quiz edit */
 .breif {
     display: flex;
     flex-direction: row;
@@ -73,19 +82,34 @@ span {
 
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 479px) {
     #im {
         display: none;
     }
     .breif {
         width: 100%;
         text-align: center;  
-        margin-top: 25%;     
+        margin-top: 20%;     
      
     }
     #btn {
-        width: 50%;
+        width: 70%;
     }
 
     
+}
+
+@media screen and (min-width: 480px) and (max-width: 768px) {
+    #im {
+        width: 35%;
+    }
+    .breif {
+        width: 100%;
+        text-align: center;  
+     
+    }
+    #btn {
+        width: 70%;
+    }
+
 }

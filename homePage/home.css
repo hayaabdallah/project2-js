@@ -2,6 +2,7 @@
     font-family: 'Work Sans', sans-serif;
         font-weight: 800;
 }
+/*video background*/
 #background {
     position: fixed;
     right: 0;
@@ -9,23 +10,27 @@
     min-width: 100%; 
     min-height: 100%;
   }
-
+/*image edit */
   #im {
       width: 20%;
       height: 90%;
       
   }
-
+/*reg btn*/
 #btn {
     border: solid 1px;
     border-radius: 50px;
     width: 25%;
     transition: 1s;
+    padding: 10px;
+    position: relative;
+    bottom: 15px;
     
 }
 #btn:hover {
     transform: scale(1.2 , 1.2);
 }
+
 
 h1 {
     padding: 1% 2%;
@@ -35,23 +40,25 @@ p {
     padding: 1% 2%;
 }
 
-
+/* content edit */
 .content {
     position: fixed;
     margin-top: 3%;
 }
 
-
+/* card edit*/
 .cardEdit {
     
     margin: 45px;
-    margin-top: 2%;
+    margin-top: 1%;
 
 }
 
+
+/* breif edit*/
 .breif {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
@@ -60,9 +67,11 @@ p {
     margin-top: 3%;
     margin-left: auto;
     margin-right: auto;
+    text-align: center;
     
 }
 
+/* img edit*/
 .imge {
     display: flex;
     flex-direction: row;
@@ -71,13 +80,14 @@ p {
 }
 
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 479px) {
     #im {
-        width: 75%;
+        display: none;
     }
     .breif {
         width: 100%;
-        text-align: center;       
+        text-align: center;
+        margin-top: 15%;       
      
     }
     #btn {
@@ -85,4 +95,20 @@ p {
     }
 
     
+}
+
+@media screen and (min-width: 480px) and (max-width: 768px) {
+    #im {
+        width: 35%;
+        }
+    .breif {
+        width: 100%;
+        text-align: center;
+               
+     
+    }
+    #btn {
+        width: 50%;
+    }
+
 }

@@ -220,8 +220,11 @@ for (i = 0; i < myQ.length; i++) {
     var ans2Id = 'ans2' + i;
     var ans3Id = 'ans3' + i;
     var ans4Id = 'ans4' + i;
+    var formId = 'form' + i;
+    var spanId='span'+i;
+
     //create tr and td
-    document.getElementById('table').innerHTML += ` <tr> <td><div class="div-form"><div id="form">  <hr> <div class="div-input-p">  <p class="para" id="${qId}"></p> <div class="input-answer" id="${input1Id}"  >  <input type="radio" name="answer" id="${rad1Id}" onchange="butAple()">  <label  id="${ans1Id}" for="${rad1Id}"></label> </div> <div class="input-answer"  id="${input2Id}"  > <input type="radio" name="answer" id="${rad2Id}" onchange="butAple()">   <label  id="${ans2Id}" for="${rad2Id}"></label>   </div>    <div class="input-answer" id="${input3Id}"   >    <input type="radio" name="answer" id="${rad3Id}" onchange="butAple()"> <label id="${ans3Id}" for="${rad3Id}"></label> </div>  <div class="input-answer"   id="${input4Id}" >  <input type="radio" name="answer" id="${rad4Id}" onchange="butAple()">   <label  id="${ans4Id}" for="${rad4Id}"></label>  </div></div> <hr></div></div></td><td> `;
+    document.getElementById('table').innerHTML += ` <tr> <td><div class="div-form"><div id=${formId} class='form'>  <hr> <div class="div-input-p">  <p class="para" id="${qId}"></p> <div class="input-answer" id="${input1Id}"  >  <input type="radio" name="answer" id="${rad1Id}" onchange="butAple()">  <label  id="${ans1Id}" for="${rad1Id}"></label> </div> <div class="input-answer"  id="${input2Id}"  > <input type="radio" name="answer" id="${rad2Id}" onchange="butAple()">   <label  id="${ans2Id}" for="${rad2Id}"></label>   </div>    <div class="input-answer" id="${input3Id}"   >    <input type="radio" name="answer" id="${rad3Id}" onchange="butAple()"> <label id="${ans3Id}" for="${rad3Id}"></label> </div>  <div class="input-answer"   id="${input4Id}" >  <input type="radio" name="answer" id="${rad4Id}" onchange="butAple()">   <label  id="${ans4Id}" for="${rad4Id}"></label> </div></div> <span id=${spanId}></span> <hr></div></div></td></tr> `;
 
     //disabled radio buuton
     document.getElementById(`${rad1Id}`).disabled = true;
@@ -243,63 +246,123 @@ for (i = 0; i < myQ.length; i++) {
     //check correct answer and set background green
     if (i == 0) {
         document.getElementById(`${input3Id}`).style.backgroundColor = 'green';
+        document.getElementById(`${input2Id}`).style.backgroundColor = 'red';
+        document.getElementById(`${input1Id}`).style.backgroundColor = 'red';
+        document.getElementById(`${input4Id}`).style.backgroundColor = 'red';
     }
     else if (i == 1) {
         document.getElementById(`${input4Id}`).style.backgroundColor = 'green';
+        document.getElementById(`${input2Id}`).style.backgroundColor = 'red';
+        document.getElementById(`${input1Id}`).style.backgroundColor = 'red';
+        document.getElementById(`${input3Id}`).style.backgroundColor = 'red';
     }
     else if (i == 2) {
         document.getElementById(`${input3Id}`).style.backgroundColor = 'green';
+        document.getElementById(`${input2Id}`).style.backgroundColor = 'red';
+        document.getElementById(`${input1Id}`).style.backgroundColor = 'red';
+        document.getElementById(`${input4Id}`).style.backgroundColor = 'red';
     }
     else if (i == 3) {
         document.getElementById(`${input2Id}`).style.backgroundColor = 'green';
+        document.getElementById(`${input3Id}`).style.backgroundColor = 'red';
+        document.getElementById(`${input1Id}`).style.backgroundColor = 'red';
+        document.getElementById(`${input4Id}`).style.backgroundColor = 'red';
     }
     else if (i == 4) {
         document.getElementById(`${input2Id}`).style.backgroundColor = 'green';
+        document.getElementById(`${input3Id}`).style.backgroundColor = 'red';
+        document.getElementById(`${input1Id}`).style.backgroundColor = 'red';
+        document.getElementById(`${input4Id}`).style.backgroundColor = 'red';
     }
     else if (i == 5) {
         document.getElementById(`${input3Id}`).style.backgroundColor = 'green';
+        document.getElementById(`${input2Id}`).style.backgroundColor = 'red';
+        document.getElementById(`${input1Id}`).style.backgroundColor = 'red';
+        document.getElementById(`${input4Id}`).style.backgroundColor = 'red';
     }
     else if (i == 6) {
         document.getElementById(`${input4Id}`).style.backgroundColor = 'green';
+        document.getElementById(`${input2Id}`).style.backgroundColor = 'red';
+        document.getElementById(`${input1Id}`).style.backgroundColor = 'red';
+        document.getElementById(`${input3Id}`).style.backgroundColor = 'red';
     }
     else if (i == 7) {
         document.getElementById(`${input3Id}`).style.backgroundColor = 'green';
+        document.getElementById(`${input2Id}`).style.backgroundColor = 'red';
+        document.getElementById(`${input1Id}`).style.backgroundColor = 'red';
+        document.getElementById(`${input4Id}`).style.backgroundColor = 'red';
     }
     else if (i == 8) {
         document.getElementById(`${input4Id}`).style.backgroundColor = 'green';
+        document.getElementById(`${input2Id}`).style.backgroundColor = 'red';
+        document.getElementById(`${input1Id}`).style.backgroundColor = 'red';
+        document.getElementById(`${input3Id}`).style.backgroundColor = 'red';
     }
     else if (i == 9) {
         document.getElementById(`${input4Id}`).style.backgroundColor = 'green';
+        document.getElementById(`${input2Id}`).style.backgroundColor = 'red';
+        document.getElementById(`${input1Id}`).style.backgroundColor = 'red';
+        document.getElementById(`${input3Id}`).style.backgroundColor = 'red';
     }
     else if (i == 10) {
         document.getElementById(`${input2Id}`).style.backgroundColor = 'green';
+        document.getElementById(`${input3Id}`).style.backgroundColor = 'red';
+        document.getElementById(`${input1Id}`).style.backgroundColor = 'red';
+        document.getElementById(`${input4Id}`).style.backgroundColor = 'red';
     }
     else if (i == 11) {
         document.getElementById(`${input1Id}`).style.backgroundColor = 'green';
+        document.getElementById(`${input2Id}`).style.backgroundColor = 'red';
+        document.getElementById(`${input3Id}`).style.backgroundColor = 'red';
+        document.getElementById(`${input4Id}`).style.backgroundColor = 'red';
     }
     else if (i == 12) {
         document.getElementById(`${input2Id}`).style.backgroundColor = 'green';
+        document.getElementById(`${input3Id}`).style.backgroundColor = 'red';
+        document.getElementById(`${input1Id}`).style.backgroundColor = 'red';
+        document.getElementById(`${input4Id}`).style.backgroundColor = 'red';
     }
     else if (i == 13) {
         document.getElementById(`${input3Id}`).style.backgroundColor = 'green';
+        document.getElementById(`${input2Id}`).style.backgroundColor = 'red';
+        document.getElementById(`${input1Id}`).style.backgroundColor = 'red';
+        document.getElementById(`${input4Id}`).style.backgroundColor = 'red';
     }
     else if (i == 14) {
         document.getElementById(`${input3Id}`).style.backgroundColor = 'green';
+        document.getElementById(`${input2Id}`).style.backgroundColor = 'red';
+        document.getElementById(`${input1Id}`).style.backgroundColor = 'red';
+        document.getElementById(`${input4Id}`).style.backgroundColor = 'red';
     }
     else if (i == 15) {
         document.getElementById(`${input3Id}`).style.backgroundColor = 'green';
+        document.getElementById(`${input2Id}`).style.backgroundColor = 'red';
+        document.getElementById(`${input1Id}`).style.backgroundColor = 'red';
+        document.getElementById(`${input4Id}`).style.backgroundColor = 'red';
     }
     else if (i == 16) {
         document.getElementById(`${input1Id}`).style.backgroundColor = 'green';
+        document.getElementById(`${input2Id}`).style.backgroundColor = 'red';
+        document.getElementById(`${input3Id}`).style.backgroundColor = 'red';
+        document.getElementById(`${input4Id}`).style.backgroundColor = 'red';
     }
     else if (i == 17) {
         document.getElementById(`${input1Id}`).style.backgroundColor = 'green';
+        document.getElementById(`${input2Id}`).style.backgroundColor = 'red';
+        document.getElementById(`${input3Id}`).style.backgroundColor = 'red';
+        document.getElementById(`${input4Id}`).style.backgroundColor = 'red';
     }
     else if (i == 18) {
         document.getElementById(`${input2Id}`).style.backgroundColor = 'green';
+        document.getElementById(`${input3Id}`).style.backgroundColor = 'red';
+        document.getElementById(`${input1Id}`).style.backgroundColor = 'red';
+        document.getElementById(`${input4Id}`).style.backgroundColor = 'red';
     }
     else if (i == 19) {
         document.getElementById(`${input2Id}`).style.backgroundColor = 'green';
+        document.getElementById(`${input3Id}`).style.backgroundColor = 'red';
+        document.getElementById(`${input1Id}`).style.backgroundColor = 'red';
+        document.getElementById(`${input4Id}`).style.backgroundColor = 'red';
     }
 
 
@@ -308,24 +371,29 @@ for (i = 0; i < myQ.length; i++) {
     fa=JSON.parse(sessionStorage.getItem('falseAns'));
     for (j = 0; j < f.length; j++) {
         if (f[j] == i) {
-            if (fa[j] == 'a') {
-                document.getElementById(`${input1Id}`).style.backgroundColor = 'red';
-                break;
-            }
-            else if (fa[j] == 'b') {
-                document.getElementById(`${input2Id}`).style.backgroundColor = 'red';
-                break;
-            }
-            else if (fa[j] == 'c') {
-                document.getElementById(`${input3Id}`).style.backgroundColor = 'red';
-                break;
-            }
-            else if (fa[j] == 'd') {
-                document.getElementById(`${input4Id}`).style.backgroundColor = 'red';
-                break;
-            }
+           if (fa[j] == 'a') {
+        document.getElementById(`${spanId}`).innerHTML = 'Your Answer : A';
+        break;
+    }
+    else if (fa[j] == 'b') {
+        document.getElementById(`${spanId}`).innerHTML = 'Your Answer : B';
+        break;
+    }
+    else if (fa[j] == 'c') {
+        document.getElementById(`${spanId}`).innerHTML = 'Your Answer : C';
+        break;
+    }
+    else if (fa[j] == 'd') {
+        document.getElementById(`${spanId}`).innerHTML = 'Your Answer : D';
+        break;
+    }
         }
     }
+
+
+   
+
+  
 
 
 }
