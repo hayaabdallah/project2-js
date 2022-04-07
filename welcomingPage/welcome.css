@@ -19,6 +19,12 @@
   }
 
 
+#fname
+{
+    color:rgb(255, 134, 5);
+}
+
+
 /*btn edit */
 #btn {
     border: solid 1px;

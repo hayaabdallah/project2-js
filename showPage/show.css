@@ -75,26 +75,22 @@ span{
     font-size: 20px;
 }
 @media screen and (min-width: 481px) and (max-width: 768px) {
-    tbody{
-        margin-top:-150px ;
-    }
+  
     .container {
-        width: 100%;
-        padding-left: 60px;
-        margin-left: 50px;
+        width: 609px;
+        
        
     }
     .div-form {
-        width: 400px;
+        width: 630px;
     }
     .para
     {
-     width: 350px;
-      font-size: 16px;
-      position: relative;
-      bottom: 20px;
+     width: 500px;
+      font-size: 20px;
+     
       text-align: center;
-      left:30px;
+      
    
     }
     .form {
@@ -102,24 +98,17 @@ span{
         height: 60%;  
         position: relative;
         bottom: 10px;
-        right: 7px;
-        margin-bottom: 10%;
+      
            
     }
     .input-answer
  {
-   width: 200px;
+   width: 400px;
    position: relative;
    left:30px;
    
  }
-    .div-input-p {
-        width: 100px;
-        display: flex;
-        flex-wrap: wrap;
-      position: relative;
-      right: 100px;
-    }
+    
     h1{
         text-align: center;
     }
@@ -127,27 +116,26 @@ span{
 
 @media screen and (max-width: 480px) {
     tbody{
-        margin-top:-150px ;
-        margin-left: -180px;
+        margin-top:-50px ;
+        margin-left: -140px;
     }
     span{
         width:150px;
     }
     .container {
-        width: 99%;
-        padding-left: 60px;
-        margin-left: 50px;
+        width: 59px;
+        
     }
     .div-form {
-        width: 300px;
+        width: 500px;
     }
     .para
     {
-     width: 200px;
+     width: 240px;
       font-size: 16px;
       position: relative;
       bottom: 20px;
-      left:30px;
+      left: 45px;
    
     }
     .form {
@@ -155,15 +143,16 @@ span{
         height: 60%;  
         position: relative;
         bottom: 10px;
-        right: 7px;
+        left: 120px;
+       
         margin-bottom: 10%;
            
     }
     .input-answer
  {
-   width: 150px;
+   width: 200px;
    position: relative;
-   left:30px;
+   left:40px;
    
  }
     .div-input-p {

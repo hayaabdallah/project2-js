@@ -3,6 +3,8 @@ let signPass = document.getElementById("pss");
 let emch = document.getElementById("emCh");
 let pach = document.getElementById("paCh");
 
+
+//make sure that email and password matches the values in local storage
 function sign() {
     if (email.value === localStorage.getItem("email")) {
         emch.style.display = "none";

@@ -245,124 +245,124 @@ for (i = 0; i < myQ.length; i++) {
 
     //check correct answer and set background green
     if (i == 0) {
-        document.getElementById(`${input3Id}`).style.backgroundColor = 'green';
-        document.getElementById(`${input2Id}`).style.backgroundColor = 'red';
-        document.getElementById(`${input1Id}`).style.backgroundColor = 'red';
-        document.getElementById(`${input4Id}`).style.backgroundColor = 'red';
+        document.getElementById(`${input3Id}`).style.backgroundColor = '#90EE90';
+        document.getElementById(`${input2Id}`).style.backgroundColor = '#FF5C5C';
+        document.getElementById(`${input1Id}`).style.backgroundColor = '#FF5C5C';
+        document.getElementById(`${input4Id}`).style.backgroundColor = '#FF5C5C';
     }
     else if (i == 1) {
-        document.getElementById(`${input4Id}`).style.backgroundColor = 'green';
-        document.getElementById(`${input2Id}`).style.backgroundColor = 'red';
-        document.getElementById(`${input1Id}`).style.backgroundColor = 'red';
-        document.getElementById(`${input3Id}`).style.backgroundColor = 'red';
+        document.getElementById(`${input4Id}`).style.backgroundColor = '#90EE90';
+        document.getElementById(`${input2Id}`).style.backgroundColor = '#FF5C5C';
+        document.getElementById(`${input1Id}`).style.backgroundColor = '#FF5C5C';
+        document.getElementById(`${input3Id}`).style.backgroundColor = '#FF5C5C';
     }
     else if (i == 2) {
-        document.getElementById(`${input3Id}`).style.backgroundColor = 'green';
-        document.getElementById(`${input2Id}`).style.backgroundColor = 'red';
-        document.getElementById(`${input1Id}`).style.backgroundColor = 'red';
-        document.getElementById(`${input4Id}`).style.backgroundColor = 'red';
+        document.getElementById(`${input3Id}`).style.backgroundColor = '#90EE90';
+        document.getElementById(`${input2Id}`).style.backgroundColor = '#FF5C5C';
+        document.getElementById(`${input1Id}`).style.backgroundColor = '#FF5C5C';
+        document.getElementById(`${input4Id}`).style.backgroundColor = '#FF5C5C';
     }
     else if (i == 3) {
-        document.getElementById(`${input2Id}`).style.backgroundColor = 'green';
-        document.getElementById(`${input3Id}`).style.backgroundColor = 'red';
-        document.getElementById(`${input1Id}`).style.backgroundColor = 'red';
-        document.getElementById(`${input4Id}`).style.backgroundColor = 'red';
+        document.getElementById(`${input2Id}`).style.backgroundColor = '#90EE90';
+        document.getElementById(`${input3Id}`).style.backgroundColor = '#FF5C5C';
+        document.getElementById(`${input1Id}`).style.backgroundColor = '#FF5C5C';
+        document.getElementById(`${input4Id}`).style.backgroundColor = '#FF5C5C';
     }
     else if (i == 4) {
-        document.getElementById(`${input2Id}`).style.backgroundColor = 'green';
-        document.getElementById(`${input3Id}`).style.backgroundColor = 'red';
-        document.getElementById(`${input1Id}`).style.backgroundColor = 'red';
-        document.getElementById(`${input4Id}`).style.backgroundColor = 'red';
+        document.getElementById(`${input2Id}`).style.backgroundColor = '#90EE90';
+        document.getElementById(`${input3Id}`).style.backgroundColor = '#FF5C5C';
+        document.getElementById(`${input1Id}`).style.backgroundColor = '#FF5C5C';
+        document.getElementById(`${input4Id}`).style.backgroundColor = '#FF5C5C';
     }
     else if (i == 5) {
-        document.getElementById(`${input3Id}`).style.backgroundColor = 'green';
-        document.getElementById(`${input2Id}`).style.backgroundColor = 'red';
-        document.getElementById(`${input1Id}`).style.backgroundColor = 'red';
-        document.getElementById(`${input4Id}`).style.backgroundColor = 'red';
+        document.getElementById(`${input3Id}`).style.backgroundColor = '#90EE90';
+        document.getElementById(`${input2Id}`).style.backgroundColor = '#FF5C5C';
+        document.getElementById(`${input1Id}`).style.backgroundColor = '#FF5C5C';
+        document.getElementById(`${input4Id}`).style.backgroundColor = '#FF5C5C';
     }
     else if (i == 6) {
-        document.getElementById(`${input4Id}`).style.backgroundColor = 'green';
-        document.getElementById(`${input2Id}`).style.backgroundColor = 'red';
-        document.getElementById(`${input1Id}`).style.backgroundColor = 'red';
-        document.getElementById(`${input3Id}`).style.backgroundColor = 'red';
+        document.getElementById(`${input4Id}`).style.backgroundColor = '#90EE90';
+        document.getElementById(`${input2Id}`).style.backgroundColor = '#FF5C5C';
+        document.getElementById(`${input1Id}`).style.backgroundColor = '#FF5C5C';
+        document.getElementById(`${input3Id}`).style.backgroundColor = '#FF5C5C';
     }
     else if (i == 7) {
-        document.getElementById(`${input3Id}`).style.backgroundColor = 'green';
-        document.getElementById(`${input2Id}`).style.backgroundColor = 'red';
-        document.getElementById(`${input1Id}`).style.backgroundColor = 'red';
-        document.getElementById(`${input4Id}`).style.backgroundColor = 'red';
+        document.getElementById(`${input3Id}`).style.backgroundColor = '#90EE90';
+        document.getElementById(`${input2Id}`).style.backgroundColor = '#FF5C5C';
+        document.getElementById(`${input1Id}`).style.backgroundColor = '#FF5C5C';
+        document.getElementById(`${input4Id}`).style.backgroundColor = '#FF5C5C';
     }
     else if (i == 8) {
-        document.getElementById(`${input4Id}`).style.backgroundColor = 'green';
-        document.getElementById(`${input2Id}`).style.backgroundColor = 'red';
-        document.getElementById(`${input1Id}`).style.backgroundColor = 'red';
-        document.getElementById(`${input3Id}`).style.backgroundColor = 'red';
+        document.getElementById(`${input4Id}`).style.backgroundColor = '#90EE90';
+        document.getElementById(`${input2Id}`).style.backgroundColor = '#FF5C5C';
+        document.getElementById(`${input1Id}`).style.backgroundColor = '#FF5C5C';
+        document.getElementById(`${input3Id}`).style.backgroundColor = '#FF5C5C';
     }
     else if (i == 9) {
-        document.getElementById(`${input4Id}`).style.backgroundColor = 'green';
-        document.getElementById(`${input2Id}`).style.backgroundColor = 'red';
-        document.getElementById(`${input1Id}`).style.backgroundColor = 'red';
-        document.getElementById(`${input3Id}`).style.backgroundColor = 'red';
+        document.getElementById(`${input4Id}`).style.backgroundColor = '#90EE90';
+        document.getElementById(`${input2Id}`).style.backgroundColor = '#FF5C5C';
+        document.getElementById(`${input1Id}`).style.backgroundColor = '#FF5C5C';
+        document.getElementById(`${input3Id}`).style.backgroundColor = '#FF5C5C';
     }
     else if (i == 10) {
-        document.getElementById(`${input2Id}`).style.backgroundColor = 'green';
-        document.getElementById(`${input3Id}`).style.backgroundColor = 'red';
-        document.getElementById(`${input1Id}`).style.backgroundColor = 'red';
-        document.getElementById(`${input4Id}`).style.backgroundColor = 'red';
+        document.getElementById(`${input2Id}`).style.backgroundColor = '#90EE90';
+        document.getElementById(`${input3Id}`).style.backgroundColor = '#FF5C5C';
+        document.getElementById(`${input1Id}`).style.backgroundColor = '#FF5C5C';
+        document.getElementById(`${input4Id}`).style.backgroundColor = '#FF5C5C';
     }
     else if (i == 11) {
-        document.getElementById(`${input1Id}`).style.backgroundColor = 'green';
-        document.getElementById(`${input2Id}`).style.backgroundColor = 'red';
-        document.getElementById(`${input3Id}`).style.backgroundColor = 'red';
-        document.getElementById(`${input4Id}`).style.backgroundColor = 'red';
+        document.getElementById(`${input1Id}`).style.backgroundColor = '#90EE90';
+        document.getElementById(`${input2Id}`).style.backgroundColor = '#FF5C5C';
+        document.getElementById(`${input3Id}`).style.backgroundColor = '#FF5C5C';
+        document.getElementById(`${input4Id}`).style.backgroundColor = '#FF5C5C';
     }
     else if (i == 12) {
-        document.getElementById(`${input2Id}`).style.backgroundColor = 'green';
-        document.getElementById(`${input3Id}`).style.backgroundColor = 'red';
-        document.getElementById(`${input1Id}`).style.backgroundColor = 'red';
-        document.getElementById(`${input4Id}`).style.backgroundColor = 'red';
+        document.getElementById(`${input2Id}`).style.backgroundColor = '#90EE90';
+        document.getElementById(`${input3Id}`).style.backgroundColor = '#FF5C5C';
+        document.getElementById(`${input1Id}`).style.backgroundColor = '#FF5C5C';
+        document.getElementById(`${input4Id}`).style.backgroundColor = '#FF5C5C';
     }
     else if (i == 13) {
-        document.getElementById(`${input3Id}`).style.backgroundColor = 'green';
-        document.getElementById(`${input2Id}`).style.backgroundColor = 'red';
-        document.getElementById(`${input1Id}`).style.backgroundColor = 'red';
-        document.getElementById(`${input4Id}`).style.backgroundColor = 'red';
+        document.getElementById(`${input3Id}`).style.backgroundColor = '#90EE90';
+        document.getElementById(`${input2Id}`).style.backgroundColor = '#FF5C5C';
+        document.getElementById(`${input1Id}`).style.backgroundColor = '#FF5C5C';
+        document.getElementById(`${input4Id}`).style.backgroundColor = '#FF5C5C';
     }
     else if (i == 14) {
-        document.getElementById(`${input3Id}`).style.backgroundColor = 'green';
-        document.getElementById(`${input2Id}`).style.backgroundColor = 'red';
-        document.getElementById(`${input1Id}`).style.backgroundColor = 'red';
-        document.getElementById(`${input4Id}`).style.backgroundColor = 'red';
+        document.getElementById(`${input3Id}`).style.backgroundColor = '#90EE90';
+        document.getElementById(`${input2Id}`).style.backgroundColor = '#FF5C5C';
+        document.getElementById(`${input1Id}`).style.backgroundColor = '#FF5C5C';
+        document.getElementById(`${input4Id}`).style.backgroundColor = '#FF5C5C';
     }
     else if (i == 15) {
-        document.getElementById(`${input3Id}`).style.backgroundColor = 'green';
-        document.getElementById(`${input2Id}`).style.backgroundColor = 'red';
-        document.getElementById(`${input1Id}`).style.backgroundColor = 'red';
-        document.getElementById(`${input4Id}`).style.backgroundColor = 'red';
+        document.getElementById(`${input3Id}`).style.backgroundColor = '#90EE90';
+        document.getElementById(`${input2Id}`).style.backgroundColor = '#FF5C5C';
+        document.getElementById(`${input1Id}`).style.backgroundColor = '#FF5C5C';
+        document.getElementById(`${input4Id}`).style.backgroundColor = '#FF5C5C';
     }
     else if (i == 16) {
-        document.getElementById(`${input1Id}`).style.backgroundColor = 'green';
-        document.getElementById(`${input2Id}`).style.backgroundColor = 'red';
-        document.getElementById(`${input3Id}`).style.backgroundColor = 'red';
-        document.getElementById(`${input4Id}`).style.backgroundColor = 'red';
+        document.getElementById(`${input1Id}`).style.backgroundColor = '#90EE90';
+        document.getElementById(`${input2Id}`).style.backgroundColor = '#FF5C5C';
+        document.getElementById(`${input3Id}`).style.backgroundColor = '#FF5C5C';
+        document.getElementById(`${input4Id}`).style.backgroundColor = '#FF5C5C';
     }
     else if (i == 17) {
-        document.getElementById(`${input1Id}`).style.backgroundColor = 'green';
-        document.getElementById(`${input2Id}`).style.backgroundColor = 'red';
-        document.getElementById(`${input3Id}`).style.backgroundColor = 'red';
-        document.getElementById(`${input4Id}`).style.backgroundColor = 'red';
+        document.getElementById(`${input1Id}`).style.backgroundColor = '#90EE90';
+        document.getElementById(`${input2Id}`).style.backgroundColor = '#FF5C5C';
+        document.getElementById(`${input3Id}`).style.backgroundColor = '#FF5C5C';
+        document.getElementById(`${input4Id}`).style.backgroundColor = '#FF5C5C';
     }
     else if (i == 18) {
-        document.getElementById(`${input2Id}`).style.backgroundColor = 'green';
-        document.getElementById(`${input3Id}`).style.backgroundColor = 'red';
-        document.getElementById(`${input1Id}`).style.backgroundColor = 'red';
-        document.getElementById(`${input4Id}`).style.backgroundColor = 'red';
+        document.getElementById(`${input2Id}`).style.backgroundColor = '#90EE90';
+        document.getElementById(`${input3Id}`).style.backgroundColor = '#FF5C5C';
+        document.getElementById(`${input1Id}`).style.backgroundColor = '#FF5C5C';
+        document.getElementById(`${input4Id}`).style.backgroundColor = '#FF5C5C';
     }
     else if (i == 19) {
-        document.getElementById(`${input2Id}`).style.backgroundColor = 'green';
-        document.getElementById(`${input3Id}`).style.backgroundColor = 'red';
-        document.getElementById(`${input1Id}`).style.backgroundColor = 'red';
-        document.getElementById(`${input4Id}`).style.backgroundColor = 'red';
+        document.getElementById(`${input2Id}`).style.backgroundColor = '#90EE90';
+        document.getElementById(`${input3Id}`).style.backgroundColor = '#FF5C5C';
+        document.getElementById(`${input1Id}`).style.backgroundColor = '#FF5C5C';
+        document.getElementById(`${input4Id}`).style.backgroundColor = '#FF5C5C';
     }
 
 
@@ -390,10 +390,6 @@ for (i = 0; i < myQ.length; i++) {
         }
     }
 
-
-   
-
-  
 
 
 }

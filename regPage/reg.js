@@ -15,7 +15,7 @@ let sub = document.getElementById("btn");
 let nameReg = /^[a-zA-Z]/;
 let passReg = /^(?=.*[0-9])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{7,15}$/;
 
-
+//to save the input value in local storage
 for (i = 0; i < input.length; i++) {
     input[i].onchange = function() {
         localStorage.setItem(this.name, this.value)

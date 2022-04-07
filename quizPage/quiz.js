@@ -1,6 +1,6 @@
-f = []
-syff = []
-pass = []
+f = [] //number of wrong question
+syff = []//symbol of wrong question
+pass = []//
 test=[]
 let i = 0
 let n = 0;
@@ -218,7 +218,7 @@ document.getElementById("button-next").disabled=true;
 
 
 
-
+//message to iq section
 
 if (i == 0 && r == 0) {
     r = r + 1;
@@ -233,7 +233,7 @@ if (i == 0 && r == 0) {
 
 
 // to get berder of answer effict ehen you click it
-
+//connect the div with input
 function divAple(P) {
 
     document.getElementById("button-next").disabled = false;
@@ -253,7 +253,10 @@ function divAple(P) {
 
 }
 
+
+//to make next button works
 function butAple(){
+
     document.getElementById("button-next").disabled=false;
 
 }
@@ -263,15 +266,14 @@ function butAple(){
 
 function orph() {
     
-
-    // intro to IQ section
+ // intro to IQ section
     if (i == 0 && r == 1) {
         r += 1
         document.getElementById("div1").style.display = "block"
         document.getElementById("div2").style.display = "block"
         document.getElementById("div3").style.display = "block"
         document.getElementById("div4").style.display = "block"
-
+  //enter the number of question, question and answers to html in iQ section 
         document.getElementById("q").innerHTML = `Q${0 + 1}: ` + myQ[0].question;
 
         document.getElementById("ans1").innerHTML = myQ[0].answers["a"];
@@ -281,10 +283,13 @@ function orph() {
         document.getElementById("ans3").innerHTML = myQ[0].answers["c"];
 
         document.getElementById("ans4").innerHTML = myQ[0].answers["d"];
+        document.getElementById("button-next").disabled=true;
+
         return
     }
 
-    // intro to english section
+
+    // message to english section
 
     if (i == 4 && n == 0) {
         n += 1;
@@ -298,7 +303,9 @@ function orph() {
 
 
     }
+    //into to english section
     if (i == 4 && n > 0) {
+
         document.getElementById("div1").style.display = "block"
         document.getElementById("div2").style.display = "block"
         document.getElementById("div3").style.display = "block"
@@ -306,7 +313,7 @@ function orph() {
     }
 
 
-    // intro to technical section
+    // message to technical section
 
     if (i == 9 && c == 0) {
         c += 1;
@@ -318,6 +325,8 @@ function orph() {
 
         return document.getElementById("q").innerHTML = "now we are going to technical section";
     }
+
+    //intro to technical section
     if (i == 9 && c > 0) {
         document.getElementById("div1").style.display = "block"
         document.getElementById("div2").style.display = "block"
@@ -342,7 +351,7 @@ function orph() {
     }
 
 
-    // data for sucsses answer
+    // add data of sucsses answer to pass array
     if (document.getElementById("rad1").checked == true && document.getElementById("ans1").value == "1") {
         pass.push(i);
     }
@@ -360,8 +369,8 @@ function orph() {
     // data for unsucsses answer
 
     if (document.getElementById("rad1").checked == true && document.getElementById("ans1").value != "1") {
-        f.push(i)
-        syff.push("a")
+        f.push(i) //number of wrong ans
+        syff.push("a") 
     }
     if (document.getElementById("rad2").checked == true && document.getElementById("ans2").value != "1") {
         f.push(i)
@@ -430,7 +439,7 @@ function orph() {
 
 
 }
-
+//timer function---------------------------------------------
 const startingMinutes=30;
 
 //hours to minutes
@@ -446,7 +455,7 @@ function updatecountdown()
     const minutes=Math.floor(time/60);
     //to get the number of full seconds
     let seconds=time % 60;
-    seconds=seconds<30 ?  '0' +seconds:seconds;
+    seconds=seconds<30 ?  '' +seconds:seconds;
     //enter value of minutes and seconds to <p> tag
     countdownEl.innerHTML=`${minutes} : ${seconds}`;
     time--;
